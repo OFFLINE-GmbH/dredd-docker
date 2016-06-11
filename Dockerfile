@@ -4,6 +4,4 @@ RUN apt-get update && apt-get install nodejs nodejs-legacy npm -y && apt-get -y 
 
 RUN npm install --silent dredd
 
-ENV PATH $PATH:/tmp/code/node_modules/dredd/bin/
-
-ENTRYPOINT ['dredd']
+ENTRYPOINT ['/tmp/code/node_modules/dredd/bin/dredd']

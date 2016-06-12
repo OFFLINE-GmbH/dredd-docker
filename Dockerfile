@@ -8,4 +8,3 @@ RUN npm dedupe
 
 ENTRYPOINT ["./node_modules/dredd/bin/dredd"]
 
-CMD ["--help"]

@@ -6,5 +6,4 @@ WORKDIR /tmp/code
 RUN npm install --silent dredd
 RUN npm dedupe
 
-ENTRYPOINT ["./node_modules/dredd/bin/dredd"]
 

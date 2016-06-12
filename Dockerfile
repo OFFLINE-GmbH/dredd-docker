@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install nodejs nodejs-legacy npm -y && apt-get -y 
 
 WORKDIR /tmp/code
 RUN npm install --silent dredd
+RUN npm dedupe
 
 ENTRYPOINT ["./node_modules/dredd/bin/dredd"]
 
